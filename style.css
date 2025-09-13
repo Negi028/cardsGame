@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1739124910630-9ef0ab2a7599?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9rZW1vbiUyMHNjZW5lcnklMjBhdCUyMGNvcm5lciUyMHBpa2FjaHV8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  height: 320px;
+  width: 260px;
+  border: 3px solid lightgray;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  /*//for cars=ds*/
+  object-fit: cover;
+  object-fit: center;
+}
+
+#card1 {
+  z-index: 5;
+}
+
+#card2 {
+  z-index: 4;
+  transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+#card3 {
+  z-index: 3;
+  transform: translate(-50%, -50%) rotate(-16deg);
+}
+
+#card4 {
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(-24deg);
+}
+
+#card5 {
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(-32deg);
+}
+
+#card2:hover {
+  z-index: 10;
+}
+#card3:hover {
+  z-index: 10;
+}
+#card4:hover {
+  z-index: 10;
+}
+#card5:hover {
+  z-index: 10;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* or "contain", depending on your goal */
+  display: block;
+}
